@@ -4,6 +4,7 @@
 
 from flask import Flask
 from understat_tools.top_three import top_three
+from flask_cors import CORS
 
 import asyncio
 
@@ -12,6 +13,7 @@ import asyncio
 #----------------------------------------------------------------------------#
 
 app = Flask(__name__)
+CORS(app)
 
 #----------------------------------------------------------------------------#
 # Controllers.

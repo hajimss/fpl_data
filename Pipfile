@@ -9,6 +9,7 @@ aiohttp = "*"
 flask = {extras = ["async"], version = "*"}
 aioflask = "*"
 gunicorn = "*"
+flask-cors = "*"
 
 [dev-packages]
 
