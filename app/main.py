@@ -19,7 +19,8 @@ CORS(app)
 # Controllers.
 #----------------------------------------------------------------------------#
 
+
 @app.route('/top_three')
 async def get_top_three():
     data = await top_three()
-    return data
+    return {"result": data}
